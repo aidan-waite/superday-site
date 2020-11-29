@@ -1,0 +1,162 @@
+<html>
+  <head>
+    <title>SuperDay Countdown</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style>
+      html {
+        padding: 0;
+        margin: 0;
+        font-family: monospace;
+      }
+      body {
+        padding: 5px;
+      }
+      #countdown {
+        font-size: 24px;
+        width: 100%;
+        margin: 20px 0 40px 0;
+      }
+      #countdown span {
+        font-size: 45px;
+      }
+      h1 {
+        font-size: 50px;
+        color: #2d2d2d;
+      }
+      h3 {
+        font-weight: 300;
+        margin: 5px 0;
+      }
+      h4 {
+        margin: 5px 0;
+      }
+      ul {
+        padding: 0px 0 0 26px;
+        margin: 2px 0;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>SuperDay OFFICIAL EVENT</h1>
+    <h3>The next SuperDay event starts in...</h3>
+    <div id="countdown">
+      <span id="days"></span>days<span id="hours"></span>h<span
+        id="minutes"
+      ></span
+      >m<span id="seconds"></span>s
+    </div>
+    <h4>Start Times</h4>
+    <ul>
+      <li><span id="local-start-time"></span> Local</li>
+      <li><span id="vancouver-start-time"></span> Vancouver</li>
+      <li><span id="calgary-start-time"></span> Calgary</li>
+      <li><span id="toronto-start-time"></span> Toronto</li>
+      <li><span id="halifax-start-time"></span> Halifax</li>
+      <li><span id="port-macquarie-start-time"></span> Port Macquarie</li>
+      <li><span id="seoul-start-time"></span> Seoul</li>
+    </ul>
+    <h2>
+      What are we playing next? Starcraft 2 custom games, especially
+      <a href="https://www.zealothockey.net/" target="_blank">Zealot Hockey</a>!
+    </h2>
+    <p>
+      SC2 is around 30 gigs so you might want to get that baby installed sooner
+      rather than later!
+    </p>
+    <h4>Hot Links for Young Pros</h4>
+    <ul>
+      <li>
+        <a href="https://starcraft2.com/en-us/" target="_blank"
+          >Download SC2 for free</a
+        >
+      </li>
+      <li>
+        <a href="https://www.facebook.com/groups/superday" target="_blank"
+          >Join the SuperDay Facebook Group</a
+        >
+      </li>
+      <li>
+        <a href="https://discord.gg/kSzTWEh">Join the SuperDay Discord</a>
+      </li>
+    </ul>
+  </body>
+
+  <script>
+    const eventStartDate = new Date(Date.UTC(2020, 10, 21, 1, 0, 0, 0))
+
+    document.getElementById(
+      "local-start-time"
+    ).innerHTML = eventStartDate.toLocaleString()
+    document.getElementById(
+      "vancouver-start-time"
+    ).innerHTML = eventStartDate.toLocaleString("en-US", {
+      timeZone: "America/Vancouver",
+    })
+    document.getElementById(
+      "calgary-start-time"
+    ).innerHTML = eventStartDate.toLocaleString("en-US", {
+      timeZone: "America/Edmonton",
+    })
+    document.getElementById(
+      "toronto-start-time"
+    ).innerHTML = eventStartDate.toLocaleString("en-US", {
+      timeZone: "America/Toronto",
+    })
+    document.getElementById(
+      "halifax-start-time"
+    ).innerHTML = eventStartDate.toLocaleString("en-US", {
+      timeZone: "America/Halifax",
+    })
+    document.getElementById(
+      "port-macquarie-start-time"
+    ).innerHTML = eventStartDate.toLocaleString("en-US", {
+      timeZone: "Australia/Sydney",
+    })
+    document.getElementById(
+      "seoul-start-time"
+    ).innerHTML = eventStartDate.toLocaleString("en-US", {
+      timeZone: "Asia/Seoul",
+    })
+
+    const daysElement = document.getElementById("days")
+    const hoursElement = document.getElementById("hours")
+    const minutesElement = document.getElementById("minutes")
+    const secondsElement = document.getElementById("seconds")
+
+    updateCountdown()
+
+    timer = setInterval(() => {
+      updateCountdown()
+    }, 1000)
+
+    function updateCountdown() {
+      const now = new Date()
+      const diff = eventStartDate.getTime() - now.getTime()
+
+      if (diff <= 0) {
+        daysElement.innerHTML = "0"
+        hoursElement.innerHTML = "0"
+        minutesElement.innerHTML = "0"
+        secondsElement.innerHTML = "0"
+
+        clearInterval(timer)
+      } else {
+        let seconds = Math.floor(diff / 1000)
+        let minutes = Math.floor(seconds / 60)
+        let hours = Math.floor(minutes / 60)
+        let days = Math.floor(hours / 24)
+
+        seconds %= 60
+        minutes %= 60
+
+        const secondsLeadingZero = seconds < 10 ? "0" : ""
+        const minutesLeadingZero = minutes < 10 ? "0" : ""
+
+        secondsElement.innerHTML = "" + secondsLeadingZero + (seconds % 60)
+        minutesElement.innerHTML = "" + minutesLeadingZero + (minutes % 60)
+        hoursElement.innerHTML = "" + (hours % 24)
+        daysElement.innerHTML = "" + days
+      }
+    }
+  </script>
+</html>
