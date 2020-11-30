@@ -1,145 +1,269 @@
 <html>
   <head>
-    <title>SuperDay Countdown</title>
+    <title>SuperDay Event Info</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <style>
       html {
-        padding: 0;
+        padding: 8px;
         margin: 0;
-        font-family: monospace;
+        font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+        background-color: #f5f5f7;
       }
+
       body {
-        padding: 5px;
+        max-width: 520px;
       }
-      #countdown {
-        font-size: 24px;
-        width: 100%;
-        margin: 20px 0 40px 0;
-      }
-      #countdown span {
-        font-size: 45px;
-      }
-      h1 {
-        font-size: 50px;
-        color: #2d2d2d;
-      }
-      h3 {
+
+      p {
         font-weight: 300;
-        margin: 5px 0;
+        line-height: 25px;
       }
-      h4 {
-        margin: 5px 0;
+
+      h1 {
+        color: #0e90db;
+        font-size: 44px;
+        margin: 0;
       }
-      ul {
-        padding: 0px 0 0 26px;
-        margin: 2px 0;
+
+      h2 {
+        color: #632eff;
+        letter-spacing: 1px;
+        font-size: 26px;
+      }
+
+      .time {
+        color: #dc5917;
+        font-weight: 400;
+        font-size: 15px;
+      }
+
+      .time.large {
+        font-size: 30px;
+      }
+
+      .time p {
+        margin: 0;
+        line-height: normal;
+      }
+
+      .card {
+        margin: 30px 0;
+        padding: 30px;
+        border-radius: 30px;
+        background-color: white;
+      }
+
+      .card h2 {
+        margin: 10px 0px 32px 0px;
+      }
+
+      a {
+        color: #632eff;
       }
     </style>
   </head>
   <body>
-    <h1>SuperDay OFFICIAL EVENT</h1>
-    <h3>The next SuperDay event starts in...</h3>
-    <div id="countdown">
-      <span id="days"></span>days<span id="hours"></span>h<span
-        id="minutes"
-      ></span
-      >m<span id="seconds"></span>s
+    <h1>SuperDay</h1>
+    <div
+      class="countdown time large"
+      data-year="2020"
+      data-month="11"
+      data-day="19"
+      data-hour="2"
+    >
+      <h3>
+        Starts in:
+        <span class="days"></span> days <span class="hours"></span>h
+        <span class="minutes"></span>m <span class="seconds"></span>s
+      </h3>
     </div>
-    <h4>Start Times</h4>
-    <ul>
-      <li><span id="local-start-time"></span> Local</li>
-      <li><span id="vancouver-start-time"></span> Vancouver</li>
-      <li><span id="calgary-start-time"></span> Calgary</li>
-      <li><span id="toronto-start-time"></span> Toronto</li>
-      <li><span id="halifax-start-time"></span> Halifax</li>
-      <li><span id="port-macquarie-start-time"></span> Port Macquarie</li>
-      <li><span id="seoul-start-time"></span> Seoul</li>
-    </ul>
-    <h2>
-      What are we playing next? Starcraft 2 custom games, especially
-      <a href="https://www.zealothockey.net/" target="_blank">Zealot Hockey</a>!
-    </h2>
+    <h3>
+      <a href="https://discord.gg/kSzTWEh" target="_blank"
+        >Click here to join the SuperDay Discord server</a
+      >
+    </h3>
+
     <p>
-      SC2 is around 30 gigs so you might want to get that baby installed sooner
-      rather than later!
+      After several test runs we’re ready for a full scale, no holds barred
+      virtual SuperDay extravaganza. Three main events will occur during the
+      December 18 weekend. Discord will be the main meeting place throughout
+      SuperDay.<br /><br />
+      There's a few reasons why we decided to schedule several events throughout
+      the weekend. The first is that some people only want to play specific
+      games, so this allows them to do that. The other is that without being in
+      the same place, it's a little harder to spontaneously get a game going.<br /><br />
+      Hopefully people will show up for the scheduled events, and then they'll
+      be around to play whatever else they want and hang out. The main goal is
+      for people to show up in the Discord on Dec 18-19 and have some fun, so if
+      you do nothing else please make a note that on the evening of December 18
+      you should wander into the SuperDay discord and see what's going on.
     </p>
-    <h4>Hot Links for Young Pros</h4>
-    <ul>
-      <li>
+
+    <div class="card">
+      <!--bf1942: 7pm Calgary, 10pm Halifax, 11am Seoul-->
+      <div
+        class="countdown time"
+        data-year="2020"
+        data-month="11"
+        data-day="19"
+        data-hour="2"
+      >
+        <p class="start-time"></p>
+        <p>
+          Starts in:
+          <span class="days"></span> days <span class="hours"></span>h
+          <span class="minutes"></span>m <span class="seconds"></span>s
+        </p>
+      </div>
+      <h2>Battlefield 1942</h2>
+      <h3>
+        We're kicking off the official 2020 SuperDay by reliving the boomers
+        favorite war, World War II! Hop in a plane, tank, jeep, or boat and
+        ineffectually engage in combat.
+      </h3>
+      <a href="./install-instructions/bf1942/index.html" target="_blank"
+        >Install Instructions</a
+      >
+    </div>
+
+    <div class="card">
+      <!--among us: 1pm Calgary, 4pm Halifax, 5am Seoul-->
+      <div
+        class="countdown time"
+        data-year="2020"
+        data-month="11"
+        data-day="19"
+        data-hour="20"
+      >
+        <p class="start-time"></p>
+        <p>
+          Starts in:
+          <span class="days"></span> days <span class="hours"></span>h
+          <span class="minutes"></span>m <span class="seconds"></span>s
+        </p>
+      </div>
+      <h2>Among Us</h2>
+      <h3>
+        Similarly to Battlefield 1942, Among Us is about murdering eachother
+        except more sneakylike. Please don’t talk during or between rounds or at
+        all. PC version is recommended as the mobile version is a little hard to
+        use.
+      </h3>
+      <p>
+        Download for free on
+        <a
+          href="https://apps.apple.com/us/app/among-us/id1351168404?ls=1"
+          target="_blank"
+          >iOS</a
+        >
+        and
+        <a
+          href="https://play.google.com/store/apps/details?id=com.innersloth.spacemafia"
+          target="_blank"
+          >Android</a
+        >
+        or for $5 on
+        <a
+          href="https://store.steampowered.com/app/945360/Among_Us/"
+          target="_blank"
+          >PC</a
+        >
+      </p>
+    </div>
+    <!-- SC2 8pm Calg, 11pm Hal, 12 noon Seoul -->
+    <div class="card">
+      <div
+        class="countdown time"
+        data-year="2020"
+        data-month="11"
+        data-day="20"
+        data-hour="3"
+      >
+        <p class="start-time"></p>
+        <p>
+          Starts in:
+          <span class="days"></span> days <span class="hours"></span>h
+          <span class="minutes"></span>m <span class="seconds"></span>s
+        </p>
+      </div>
+      <h2>SC2 Customs</h2>
+      <h3>
+        Zealot Hockey, Tower Defense, Chinese-only tool tips, amateurish game
+        design... SC2 customs have it all! No RTS experience required. Game is
+        30 gigs so install it now or cry later.
+      </h3>
+      <p>
+        Download for free for
         <a href="https://starcraft2.com/en-us/" target="_blank"
-          >Download SC2 for free</a
+          >Mac OS and Windows</a
         >
-      </li>
-      <li>
-        <a href="https://www.facebook.com/groups/superday" target="_blank"
-          >Join the SuperDay Facebook Group</a
-        >
-      </li>
-      <li>
-        <a href="https://discord.gg/kSzTWEh">Join the SuperDay Discord</a>
-      </li>
-    </ul>
+      </p>
+    </div>
   </body>
 
   <script>
-    const eventStartDate = new Date(Date.UTC(2020, 10, 21, 1, 0, 0, 0))
+    const countdownElements = document.getElementsByClassName("countdown")
 
-    document.getElementById(
-      "local-start-time"
-    ).innerHTML = eventStartDate.toLocaleString()
-    document.getElementById(
-      "vancouver-start-time"
-    ).innerHTML = eventStartDate.toLocaleString("en-US", {
-      timeZone: "America/Vancouver",
-    })
-    document.getElementById(
-      "calgary-start-time"
-    ).innerHTML = eventStartDate.toLocaleString("en-US", {
-      timeZone: "America/Edmonton",
-    })
-    document.getElementById(
-      "toronto-start-time"
-    ).innerHTML = eventStartDate.toLocaleString("en-US", {
-      timeZone: "America/Toronto",
-    })
-    document.getElementById(
-      "halifax-start-time"
-    ).innerHTML = eventStartDate.toLocaleString("en-US", {
-      timeZone: "America/Halifax",
-    })
-    document.getElementById(
-      "port-macquarie-start-time"
-    ).innerHTML = eventStartDate.toLocaleString("en-US", {
-      timeZone: "Australia/Sydney",
-    })
-    document.getElementById(
-      "seoul-start-time"
-    ).innerHTML = eventStartDate.toLocaleString("en-US", {
-      timeZone: "Asia/Seoul",
-    })
+    for (const element of countdownElements) {
+      const year = element.dataset.year
+      const month = element.dataset.month
+      const day = element.dataset.day
+      const hour = element.dataset.hour
 
-    const daysElement = document.getElementById("days")
-    const hoursElement = document.getElementById("hours")
-    const minutesElement = document.getElementById("minutes")
-    const secondsElement = document.getElementById("seconds")
+      const endDate = new Date(Date.UTC(year, month, day, hour, 0, 0, 0))
+      updateCountdown(endDate, element)
+      setInterval(() => {
+        updateCountdown(endDate, element)
+      }, 1000)
 
-    updateCountdown()
+      const dayName = new Intl.DateTimeFormat("en-US", {
+        weekday: "long",
+      }).format(endDate)
+      const monthName = new Intl.DateTimeFormat("en-US", {
+        month: "long",
+      }).format(endDate)
+      const timeWithAMPM = new Intl.DateTimeFormat("en-US", {
+        hour: "numeric",
+        minute: "numeric",
+        hour12: true,
+      }).format(endDate)
 
-    timer = setInterval(() => {
-      updateCountdown()
-    }, 1000)
+      // the offset is positive if the local timezone is behind UTC
+      const timezone = -endDate.getTimezoneOffset() / 60
+      const timezonePrefix = timezone > 0 ? "+" : ""
 
-    function updateCountdown() {
+      const starttime = element.querySelector(".start-time")
+      if (starttime) {
+        starttime.innerHTML =
+          dayName +
+          " " +
+          monthName +
+          " " +
+          endDate.getDate() +
+          " at " +
+          timeWithAMPM +
+          " Local (" +
+          timezonePrefix +
+          timezone +
+          " UTC)"
+      }
+    }
+
+    function updateCountdown(endDate, parentElement) {
       const now = new Date()
-      const diff = eventStartDate.getTime() - now.getTime()
+      const diff = endDate.getTime() - now.getTime()
+
+      const daysElement = parentElement.querySelector(".days")
+      const hoursElement = parentElement.querySelector(".hours")
+      const minutesElement = parentElement.querySelector(".minutes")
+      const secondsElement = parentElement.querySelector(".seconds")
 
       if (diff <= 0) {
         daysElement.innerHTML = "0"
         hoursElement.innerHTML = "0"
         minutesElement.innerHTML = "0"
         secondsElement.innerHTML = "0"
-
-        clearInterval(timer)
       } else {
         let seconds = Math.floor(diff / 1000)
         let minutes = Math.floor(seconds / 60)
