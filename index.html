@@ -80,15 +80,27 @@
         border: 1px solid #c0c0c0;
         padding: 5px;
       }
+      img#summer {
+        width: 70%;
+        margin-left: 15%;
+      }
+
+      @media (max-width: 600px) {
+        img#summer {
+        width: 90%;
+        margin-left:5%;
+      }
+      }
     </style>
   </head>
   <body>
-    <h1>SuperDay</h1>
+    <img id="summer" src="summer.svg" />
+    <h3>SuperDay: Summer Series</h1>
     <div
       class="countdown time large"
-      data-year="2020"
-      data-month="11"
-      data-day="19"
+      data-year="2021"
+      data-month="7"
+      data-day="8"
       data-hour="2"
     >
       <h3>
@@ -109,51 +121,20 @@
     </h3>
 
     <p>
-      After several test runs we’re ready for a full-scale, no-holds-barred
-      virtual SuperDay extravaganza on the weekend of December 18-19, 2020.
-      We'll hang out and play games all day, so come join us! We've also
-      scheduled some games at specific times to get a bunch of us playing at
-      once. Hopefully y'all show up for the scheduled games you're interested
-      in, then stick around for some pickup games of whatever else we feel like
-      playing. Anything you wanna play, just swing by the Discord and start it
-      up. Happy SuperDay!
+      It's suns out buns out full vax summer, the perfect time to stay home and
+      play video games. After a thorough three month analysis of the May 27 poll in
+      the Superday discord I've finally chosen days and games for Superday
+      Summer Series! I will be streaming each session on YouTube, and we'll use the Superday Discord to stay in touch so please join it if you haven't.
     </p>
 
     <div class="card">
-      <!--bf1942: 7pm Calgary, 10pm Halifax, 11am Seoul-->
+      <!--among us: Aug 8 UTC-0 2:00 = 8pm Calgary, 11pm Halifax, 11am Seoul-->
       <div
         class="countdown time"
-        data-year="2020"
-        data-month="11"
-        data-day="19"
+        data-year="2021"
+        data-month="7"
+        data-day="8"
         data-hour="2"
-      >
-        <p class="start-time"></p>
-        <p>
-          Starts in:
-          <span class="days"></span> days <span class="hours"></span>h
-          <span class="minutes"></span>m <span class="seconds"></span>s
-        </p>
-      </div>
-      <h2>Battlefield 1942</h2>
-      <h3>
-        We're kicking off the official 2020 SuperDay by reliving the boomers
-        favorite war, World War II! Hop in a plane, tank, jeep, or boat and
-        ineffectually engage in combat.
-      </h3>
-      <a href="./install-instructions/bf1942/index.html" target="_blank"
-        >Install Instructions</a
-      >
-    </div>
-
-    <div class="card">
-      <!--among us: 1pm Calgary, 4pm Halifax, 5am Seoul-->
-      <div
-        class="countdown time"
-        data-year="2020"
-        data-month="11"
-        data-day="19"
-        data-hour="20"
       >
         <p class="start-time"></p>
         <p>
@@ -164,10 +145,8 @@
       </div>
       <h2>Among Us</h2>
       <h3>
-        Similarly to Battlefield 1942, Among Us is about murdering eachother
-        except more sneakylike. Please don’t talk during or between rounds or at
-        all. PC version is recommended as the mobile version is a little hard to
-        use.
+        With 7 votes in the poll, it's the game where you talk... and stab! Includes minigames such as flush
+        the garbage and twiddle knob to make line squiggly. It's easiest to play on PC, followed by tablet, and then phone.
       </h3>
       <p>
         Download for free on
@@ -190,14 +169,15 @@
         >
       </p>
     </div>
-    <!-- SC2 8pm Calg, 11pm Hal, 12 noon Seoul -->
+
     <div class="card">
+      <!--bf1942: 7pm Calgary, 10pm Halifax, 11am Seoul-->
       <div
         class="countdown time"
-        data-year="2020"
-        data-month="11"
-        data-day="20"
-        data-hour="3"
+        data-year="2021"
+        data-month="7"
+        data-day="22"
+        data-hour="2"
       >
         <p class="start-time"></p>
         <p>
@@ -206,84 +186,63 @@
           <span class="minutes"></span>m <span class="seconds"></span>s
         </p>
       </div>
-      <h2>SC2 Customs</h2>
+      <h2>Battlefield 1942</h2>
       <h3>
-        Zealot Hockey, Tower Defense, Chinese-only tool tips, amateurish game
-        design... SC2 customs have it all! No RTS experience required. Game is
-        30 gigs so install it now or cry later.
+        With 6 votes in the poll it's Battlefield 1942! With everyone getting their pilot's license it's the perfect time to play Stalingrad only. Let's see who can get through the menu UI this time. Bonus points if you run over someone in a jeep.
       </h3>
-      <p>
-        Download for free for
-        <a href="https://starcraft2.com/en-us/" target="_blank"
-          >Mac OS and Windows</a
-        >
-      </p>
-      <!-- ADD counter strike siberia, island defense, kobald tribes, starlight hero thingy -->
-      <h4>SuperDay approved custom maps</h4>
-      <div id="custom-game-suggestions">
-        <table>
-          <thead>
-            <tr>
-              <th>Name</th>
-              <th>Type</th>
-              <th>Max Players</th>
-              <th>Difficulty</th>
-              <th>Link</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>Ice Baneling</td>
-              <td>Coop micro race</td>
-              <td>10</td>
-              <td>Easy</td>
-              <td><a href="battlenet:://starcraft/map/1/187441">Link</a></td>
-            </tr>
-            <tr>
-              <td>Raynor Party Revival</td>
-              <td>Mini games</td>
-              <td>8</td>
-              <td>Easy</td>
-              <td><a href="battlenet:://starcraft/map/1/185617">Link</a></td>
-            </tr>
-            <tr>
-              <td>Zealot Hockey</td>
-              <td>Hockey</td>
-              <td>8</td>
-              <td>Easy</td>
-              <td><a href="battlenet:://starcraft/map/1/225642">Link</a></td>
-            </tr>
-            <tr>
-              <td>Direct Strike</td>
-              <td>Tug of War</td>
-              <td>10</td>
-              <td>Medium</td>
-              <td><a href="battlenet:://starcraft/map/1/208271">Link</a></td>
-            </tr>
-            <tr>
-              <td>Squadron TD 8.47</td>
-              <td>Tower Defense</td>
-              <td>8</td>
-              <td>Medium</td>
-              <td><a href="battlenet:://starcraft/map/1/251428">Link</a></td>
-            </tr>
-            <tr>
-              <td>Entropy TD</td>
-              <td>Tower Defense</td>
-              <td>14</td>
-              <td>Hard</td>
-              <td><a href="battlenet:://starcraft/map/1/214509">Link</a></td>
-            </tr>
-            <tr>
-              <td>Terran Maze</td>
-              <td>RTS Coop Survival</td>
-              <td>13</td>
-              <td>Hard</td>
-              <td><a href="battlenet:://starcraft/map/1/323363">Link</a></td>
-            </tr>
-          </tbody>
-        </table>
+      <a href="./install-instructions/bf1942/index.html" target="_blank"
+        >Install Instructions</a
+      >
+    </div>
+
+    <div class="card">
+      <!--StarCraft: 7pm Calgary, 10pm Halifax, 11am Seoul-->
+      <div
+        class="countdown time"
+        data-year="2021"
+        data-month="7"
+        data-day="29"
+        data-hour="2"
+      >
+        <p class="start-time"></p>
+        <p>
+          Starts in:
+          <span class="days"></span> days <span class="hours"></span>h
+          <span class="minutes"></span>m <span class="seconds"></span>s
+        </p>
       </div>
+      <h2>StarCraft</h2>
+      <h3>
+        With 5 votes, it's the greatest game ever created. Jaedong practicing until his eyes bled, Jaedong vs Flash finals in an aircraft hanger, dreaming about riding horses with Jaedong, Artosis raging about two base carriers which is a very useful talent toi have. Don't worry, there's tons of custom games for the RTS-impaired. A mouse is recommended over a trackpad. Playing with original graphics is free, or you can get Remastered for fancy new graphics.
+      </h3>
+      <a href="https://battle.net" target="_blank"
+        >Get SC1 and remastered from Battle.net</a
+      >
+    </div>
+    
+    <div class="card">
+      <!--Halo 3 MCC: 7pm Calgary, 10pm Halifax, 11am Seoul-->
+      <div
+        class="countdown time"
+        data-year="2021"
+        data-month="8"
+        data-day="12"
+        data-hour="2"
+      >
+        <p class="start-time"></p>
+        <p>
+          Starts in:
+          <span class="days"></span> days <span class="hours"></span>h
+          <span class="minutes"></span>m <span class="seconds"></span>s
+        </p>
+      </div>
+      <h2>Halo: Combat Evolved</h2>
+      <h3>
+        When I say 2001 what comes to mind? Enron filing for bankruptcy? Tropical Storm Allison? How about Halo: Combat Evolved? That's right, with 5 votes in the poll it's the 2001 classic. We're going back to Blood Gulch, Caboose shooting Church, and 360 no-scopes. And it will only cost you $10! The good news is we don't have to meet anyone in the casino parking lot to mod our Xbox. If you don't want to buy it don't worry, we've got a workaround: don't come! Or maybe come hang out in the stream chat.
+      </h3>
+      <a href="https://store.steampowered.com/app/1064221/Halo_Combat_Evolved_Anniversary/" target="_blank"
+        >Halo: Combat Evolved on Steam</a
+      >
     </div>
   </body>
 
